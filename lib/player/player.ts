@@ -1,4 +1,3 @@
-import { tracks } from '@components/Playlist/data/data'
 import { title } from 'process'
 import { createPubSub } from '../pubsub'
 import { createAudio } from './audio'
