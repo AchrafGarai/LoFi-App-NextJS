@@ -1,0 +1,11 @@
+.root {
+  @apply static flex flex-col gap-9 mb-6 items-center justify-center md:sticky md:top-4;
+}
+
+.img {
+  @apply rounded-3xl;
+}
+
+.title {
+  @apply text-4xl font-medium tracking-tight;
+}

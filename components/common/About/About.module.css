@@ -1,0 +1,13 @@
+.root {
+  @apply p-4 rounded-xl flex flex-col gap-4 border-2;
+  border-color: var(--background-secondary);
+}
+
+.title {
+  @apply text-lg font-medium;
+}
+
+.text {
+  @apply text-sm;
+  color: var(--text-secondary);
+}

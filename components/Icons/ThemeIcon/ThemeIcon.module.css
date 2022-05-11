@@ -1,0 +1,4 @@
+.root{
+    @apply w-5 h-5 rounded-full;
+    background-color: var( --accent-primary);
+}

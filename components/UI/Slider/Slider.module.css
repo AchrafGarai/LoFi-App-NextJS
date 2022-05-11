@@ -1,0 +1,30 @@
+.root {
+  @apply w-full rounded-full;
+}
+
+.container {
+  @apply relative flex flex-row items-center flex-grow h-4 rounded-full;
+}
+
+.track {
+  @apply bg-zinc-500 bg-opacity-10 relative flex-grow rounded-full h-1;
+}
+
+.range {
+  @apply absolute h-full rounded-full;
+  background-color: var(--text-base);
+}
+
+.thumb {
+  @apply w-4 h-4 shadow-lg rounded-full;
+  background-color: var(--text-base);
+}
+
+.container:hover .range {
+  background-color: var(--accent-primary);
+}
+
+.container:hover .thumb {
+  @apply block;
+  background-color: var(--accent-primary);
+}

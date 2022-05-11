@@ -1,0 +1,43 @@
+.root {
+  @apply w-full col-span-2;
+}
+
+.horizontal {
+  @apply flex flex-row gap-8 items-center justify-center;
+}
+
+.vertical {
+  @apply flex flex-col-reverse gap-4 items-center justify-center;
+}
+
+.container {
+  @apply relative flex flex-row items-center flex-grow h-4;
+}
+
+.track {
+  @apply bg-zinc-500 bg-opacity-10 relative flex-grow rounded-full h-1;
+}
+
+.range {
+  @apply absolute h-full;
+  background-color: var(--text-base);
+}
+
+.thumb {
+  @apply w-4 h-4 shadow-lg rounded-full;
+  background-color: var(--text-base);
+}
+
+.container:hover .range {
+  background-color: var(--accent-primary);
+}
+
+.container:hover .thumb {
+  @apply block;
+  background-color: var(--accent-primary);
+}
+
+.label {
+  @apply text-xs;
+  color: var(--text-base);
+}

@@ -1,0 +1,36 @@
+.root {
+  @apply w-6 h-6 flex flex-row items-center justify-center;
+  gap: 3px;
+  color: var(--accent-primary);
+}
+
+.bar {
+  @apply rounded-full;
+  width: 2px;
+  height: 12px;
+  background-color: var(--accent-primary);
+  animation: anim ease 500ms;
+  animation-iteration-count: infinite;
+}
+
+.b1 {
+  animation-delay: 0ms;
+}
+.b3 {
+  animation-delay: 100ms;
+}
+.b2 {
+  animation-delay: 200ms;
+}
+
+@keyframes anim {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 12px;
+  }
+  100% {
+    height: 0;
+  }
+}

@@ -1,0 +1,8 @@
+.root {
+  @apply overflow-hidden h-0.5 block md:hidden;
+  background-color: var(--background-primary);
+}
+.indicator {
+  @apply bg-slate-100 h-full;
+  background-color: var(--accent-primary);
+}

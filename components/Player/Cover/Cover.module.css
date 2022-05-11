@@ -1,0 +1,23 @@
+.container {
+  @apply flex flex-row items-center;
+}
+.root {
+  @apply flex gap-2 items-center w-full p-2 md:p-3;
+}
+
+.img {
+  @apply rounded;
+}
+
+.info {
+  @apply flex flex-col gap-1 w-40;
+}
+
+.title {
+  @apply text-sm truncate;
+}
+
+.artist {
+  @apply text-xs truncate;
+  color: var(--text-secondary);
+}

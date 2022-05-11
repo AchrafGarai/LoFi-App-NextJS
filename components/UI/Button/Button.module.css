@@ -1,0 +1,42 @@
+.root {
+  @apply p-3 flex flex-row items-center justify-center gap-2 rounded-full text-sm;
+  color: var(--background-primary);
+  transition: all ease-out 100ms;
+}
+
+.root:focus {
+  @apply outline outline-2 outline-offset-2;
+  outline-color: var(--accent-primary);
+}
+
+.naked {
+  @apply bg-none border-0;
+  color: var(--text-base);
+}
+
+.flat {
+  background-color: var(--accent-primary);
+}
+
+.ghost {
+  @apply border-0;
+  background-color: var(--background-secondary);
+  color: var(--text-base);
+}
+
+.ghost:hover {
+  background-color: var(--background-secondary);
+}
+
+.white {
+  background-color: var(--text-base);
+}
+
+.slim {
+  @apply p-2 outline-0;
+}
+
+/*.slim:focus {
+  @apply outline-none;
+}
+*/

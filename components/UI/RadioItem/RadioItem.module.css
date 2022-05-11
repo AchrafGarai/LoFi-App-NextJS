@@ -1,0 +1,31 @@
+.root {
+  @apply text-black border-2 border-gray-500 border-opacity-20 border-solid h-8 w-8 flex justify-center items-center m-6 rounded-3xl focus:outline-2 focus:outline focus:outline-offset-2;
+}
+
+.root:focus {
+  outline-color: var(--accent-primary);
+}
+
+.dark {
+  background-color: #b0f53e;
+}
+
+.blue {
+  background-color: #4ce9e9;
+}
+
+.violet {
+  background-color: #b39ffe;
+}
+
+.pink {
+  background-color: #ef9ad5;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.spotify {
+  background-color: #1cd064;
+}

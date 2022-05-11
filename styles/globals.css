@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-primary: #090c05;
+  --background-secondary: #13150f;
+  --accent-primary: #b0f53e;
+  --accent-secondary: #111;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #6b755a;
+}
+
+[data-theme='dark'] {
+  --background-primary: #090c05;
+  --background-secondary: #13150f;
+  --accent-primary: #b0f53e;
+  --accent-secondary: #111;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #6b755a;
+}
+
+[data-theme='spotify'] {
+  --background-primary: #0d120f;
+  --background-secondary: #16221b;
+  --accent-primary: #1cd064;
+  --accent-secondary: #1cd064;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #577161;
+}
+
+[data-theme='blue'] {
+  --background-primary: #040c0c;
+  --background-secondary: #0a1c1d;
+  --accent-primary: #4ce9e9;
+  --accent-secondary: #4ce9e9;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #4d6b6b;
+}
+
+[data-theme='violet'] {
+  --background-primary: #0f0c16;
+  --background-secondary: #1d1727;
+  --accent-primary: #b39ffe;
+  --accent-secondary: #b39ffe;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #635c7c;
+}
+
+[data-theme='pink'] {
+  --background-primary: #160511;
+  --background-secondary: #301527;
+  --accent-primary: #ef9ad5;
+  --accent-secondary: #ef9ad5;
+  --selection: var(--cyan);
+  --text-base: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #86647b;
+}
+
+[data-theme='white'] {
+  --background-primary: #ffffff;
+  --background-secondary: #f0f0f0;
+  --accent-primary: #0b0b0b;
+  --accent-secondary: #0b0b0b;
+  --selection: var(--cyan);
+  --text-base: #0b0b0b;
+  --text-primary: #0b0b0b;
+  --text-secondary: #a6b2b9;
+}
+
+html,
+body {
+  background-color: var(--background-primary);
+  color: var(--text-base);
+  padding: 0;
+  padding-bottom: 64px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

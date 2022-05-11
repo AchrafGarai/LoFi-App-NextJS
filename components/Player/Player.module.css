@@ -1,0 +1,12 @@
+.root {
+  @apply fixed left-0 right-0 bottom-0 w-full;
+  background-color: var(--background-secondary);
+}
+
+.container {
+  @apply md:grid md:items-center md:grid-cols-4;
+}
+
+.progress {
+  @apply flex w-full flex-row items-center col-span-2 gap-8;
+}

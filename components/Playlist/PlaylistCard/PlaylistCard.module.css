@@ -1,0 +1,26 @@
+.root {
+  @apply flex flex-col gap-4 my-6;
+}
+
+.img {
+  @apply rounded-3xl;
+}
+
+.title {
+  @apply text-3xl font-medium tracking-tight;
+}
+
+.cardInfo {
+  @apply flex flex-col gap-4 items-center md:flex-row md:justify-between;
+}
+
+.btnLink {
+  @apply border-2 p-3 flex flex-row items-center justify-center gap-2 rounded-full;
+  color: var(--background-primary);
+  border-color: var(--background-primary);
+  transition: all ease-out 100ms;
+}
+.btnLink:focus {
+  @apply outline outline-2 outline-offset-2;
+  outline-color: var(--accent-primary);
+}

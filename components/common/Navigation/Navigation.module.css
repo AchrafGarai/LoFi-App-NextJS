@@ -1,0 +1,21 @@
+.root {
+  @apply p-2 mb-12 lg:py-3 lg:px-16;
+  background-color: var(--background-primary);
+  border-color: var(--background-secondary);
+}
+
+.list {
+  @apply flex flex-row gap-4 items-center;
+}
+
+.logo {
+  @apply flex-grow;
+}
+
+.theme_btn {
+  @apply p-2 rounded-md flex flex-row gap-2 items-center justify-items-center hover:bg-gray-500 hover:bg-opacity-10;
+}
+
+.theme_btn_txt {
+  @apply hidden text-sm sm:block;
+}

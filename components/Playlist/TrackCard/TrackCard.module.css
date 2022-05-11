@@ -1,0 +1,34 @@
+.root {
+  @apply flex flex-row gap-4 items-center px-4 py-3 rounded-lg text-left focus:outline-2;
+}
+
+.root:hover {
+  background-color: var(--background-secondary);
+}
+
+.root:focus {
+  @apply outline outline-2;
+  outline-color: var(--accent-primary);
+}
+
+.active {
+  color: var(--accent-primary);
+  background-color: var(--background-secondary);
+}
+
+.icon {
+  @apply p-3;
+}
+
+.details {
+  @apply flex flex-col gap-1 flex-grow;
+}
+
+.title {
+  @apply text-base;
+}
+
+.artist {
+  @apply text-sm;
+  color: var(--text-secondary);
+}
