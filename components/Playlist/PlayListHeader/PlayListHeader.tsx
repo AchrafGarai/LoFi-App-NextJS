@@ -29,7 +29,13 @@ const PlayListHeader: React.FC<props> = (props) => {
 
   return (
     <div className={cn(s.root)}>
-      <Image className={cn(s.img)} height={1024} width={1024} src={img} />
+      <div className="hidden sm:block">
+        <Image height={1024} width={1024} src={img} className={cn(s.img)} />
+      </div>
+      <div className="block sm:hidden">
+        <Image height={200} width={200} src={img} className={cn(s.img)} />
+      </div>
+
       <h1 className={cn(s.title)}>{title}</h1>
 
       {state.playlist.id === playlist_id ? (

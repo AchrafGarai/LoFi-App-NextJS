@@ -19,13 +19,13 @@ function PlayerSliderControls() {
 
   return (
     <div className="flex flex-row gap-2 items-center">
-      <Button variant="naked" size="slim" onClick={() => player.prev()}>
+      <Button variant="naked" onClick={() => player.prev()}>
         <PlayPrev />
       </Button>
-      <Button variant="white" size="slim" onClick={handlePlay}>
+      <Button variant="white" onClick={handlePlay}>
         {playing ? <PauseIcon /> : <PlayIcon />}
       </Button>
-      <Button variant="naked" size="slim" onClick={() => player.next()}>
+      <Button variant="naked" onClick={() => player.next()}>
         <PlayNext />
       </Button>
     </div>
