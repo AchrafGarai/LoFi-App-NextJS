@@ -7,7 +7,7 @@
 }
 
 .title {
-  @apply text-3xl font-medium tracking-tight;
+  @apply text-3xl font-medium text-center tracking-tight md:max-w-sm md:text-left;
 }
 
 .cardInfo {
