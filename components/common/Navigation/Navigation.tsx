@@ -23,7 +23,7 @@ function Navigation() {
         </NavigationMenu.Item>
         <NavigationMenu.Item>
           <NavigationMenu.Link>
-            <Link href="https://github.com/AchrafGarai/Lofi-App-front-end">
+            <Link href="https://github.com/AchrafGarai/LoFi-App-NextJS">
               <Button variant="naked">
                 <GithubIcon></GithubIcon>
               </Button>

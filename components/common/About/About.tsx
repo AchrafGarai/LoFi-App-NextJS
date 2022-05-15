@@ -11,7 +11,7 @@ function About() {
       <p className={cn(s.text)}>
         Lo-Fi is a simple music streaming app developed using NextJs.
       </p>
-      <Link href="https://github.com/AchrafGarai/Lofi-App-front-end">
+      <Link href="https://github.com/AchrafGarai/LoFi-App-NextJS">
         <Button variant="ghost">
           <GithubIcon></GithubIcon>
           Get the code on Github
