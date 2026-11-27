@@ -1,5 +1,0 @@
-export { default as RadioItem } from './RadioItem'
-export { default as ThemeSelect } from './ThemeSelect'
-export { Grid } from './Grid'
-export { Button } from './Button'
-export { Slider } from './Slider'

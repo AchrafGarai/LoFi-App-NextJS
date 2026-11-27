@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+
+/* Six palettes from the original brand. Secondary text colours were lightened
+   (or darkened, for white) just enough to pass WCAG AA (4.5:1). */
+:root,
+[data-theme='dark'] {
+  --background-primary: #090c05;
+  --background-secondary: #13150f;
+  --accent-primary: #b0f53e;
+  --text-primary: #ffffff;
+  --text-secondary: #7a836a;
+}
+
+[data-theme='spotify'] {
+  --background-primary: #0d120f;
+  --background-secondary: #16221b;
+  --accent-primary: #1cd064;
+  --text-primary: #ffffff;
+  --text-secondary: #798d81;
+}
+
+[data-theme='blue'] {
+  --background-primary: #040c0c;
+  --background-secondary: #0a1c1d;
+  --accent-primary: #4ce9e9;
+  --text-primary: #ffffff;
+  --text-secondary: #718989;
+}
+
+[data-theme='violet'] {
+  --background-primary: #0f0c16;
+  --background-secondary: #1d1727;
+  --accent-primary: #b39ffe;
+  --text-primary: #ffffff;
+  --text-secondary: #858099;
+}
+
+[data-theme='pink'] {
+  --background-primary: #160511;
+  --background-secondary: #301527;
+  --accent-primary: #ef9ad5;
+  --text-primary: #ffffff;
+  --text-secondary: #9c8093;
+}
+
+[data-theme='white'] {
+  --background-primary: #ffffff;
+  --background-secondary: #f0f0f0;
+  --accent-primary: #0b0b0b;
+  --text-primary: #0b0b0b;
+  --text-secondary: #656d71;
+}
+
+@theme inline {
+  --color-surface: var(--background-primary);
+  --color-raised: var(--background-secondary);
+  --color-accent: var(--accent-primary);
+  --color-fg: var(--text-primary);
+  --color-muted: var(--text-secondary);
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Roboto, Oxygen, Ubuntu, Cantarell,
+    'Fira Sans', 'Helvetica Neue', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-fg font-sans antialiased;
+    transition: background-color 200ms ease;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+
+  ::selection {
+    @apply bg-accent text-surface;
+  }
+}
+
+@keyframes eq {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
